@@ -1,10 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
+
 <html>
      
     <head>
         <meta charset="utf-8">
         <title>School</title>
-        <link rel="stylesheet" href="homepagecss.css">
+        <link rel="stylesheet" href="{% static 'css/homepagecss.css' %}">
 
     </head>
     <body>
@@ -80,7 +82,7 @@
         </form>
         <br><br><br>
 
-        <img src="13.png" alt="" style="width: 100px;height: 200px;">
+        <img src="{% static 'Images/23.jpg' %}" alt="" style="width: 100px;height: 200px;">
         <table border="2">
             <thead>
                 <th>class 1</th>
@@ -95,6 +97,7 @@
                 <td>4th period</td>
             </tr>
         </table>
+        
 
         
     </body>
