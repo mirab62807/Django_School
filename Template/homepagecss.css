@@ -1,0 +1,52 @@
+body{
+    background-position: fit;
+    background-color: azure;
+}
+#sname{
+    text-decoration: dashed;
+    background-color: #1f5cdf;
+    color: rgb(53, 245, 15);
+    text-align: center;
+    font-size: 50px;
+}
+p{
+    font-size: 30px;
+    color: rgb(39, 115, 185);
+
+}
+#nav1 {
+    background-color: beige;
+    padding: 10px 0;
+}
+
+#ul1 {
+    list-style-type: none;   /* removes bullets */
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 20px;               /* space between items */
+}
+
+#ul1 li a {
+    text-decoration: none;   /* removes underline */
+    color: black;            /* link color */
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 12px;       /* clickable area */
+    border-radius: 6px;      /* rounded corners */
+}
+
+#ul1 li a:hover {
+    background-color: lightgray;
+    color: darkblue;
+}
+
+#allFeaturesOfMembers
+{
+    display: inline-flex;
+    background-color:#9fe9e3;
+}
+#signIn
+{
+    background-color: lightblue;
+}
