@@ -40,12 +40,38 @@ p{
     background-color: lightgray;
     color: darkblue;
 }
-
 #allFeaturesOfMembers
 {
-    display: inline-flex;
-    background-color:#9fe9e3;
+    display: flex;            /* puts all ULs side by side */
+    gap: 20px;                /* spacing between ULs */
+    justify-content: center;  /* centers them horizontally */
+    margin-top: 20px;
 }
+
+#allFeaturesOfMembers ul {
+    list-style-type: none; /* remove bullets */
+    padding: 15px;
+    margin: 0;
+    background: linear-gradient(135deg, #a8edea, #fed6e3); /* gradient */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    width: 180px; /* fixed width for neatness */
+    transition: transform 0.3s, box-shadow 0.3s; /* smooth hover animation */
+}
+
+#allFeaturesOfMembers ul ol {
+    margin: 8px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+/* Hover effect */
+#allFeaturesOfMembers ul:hover {
+    transform: scale(1.05); /* zoom slightly */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
 #signIn
 {
     background-color: lightblue;
